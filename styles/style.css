@@ -1,0 +1,44 @@
+body {
+    background-image: url(https://image.cachorrogato.com.br/textimages/fotos-gatinhos.jpg);
+    background-size: cover;
+    /*background-color: brown; - Cor
+
+    background-image: url(/assets/images/ImgGatinho.jpg); - Imagem, podendo por link tbm no diretório da url
+    background-image: url(https://image.cachorrogato.com.br/textimages/fotos-gatinhos.jpg);
+
+    Cover para cobrir a tela para ficar o tamanho exato da tela
+    background-size: cover; 
+
+    "não repetir", mas não irá cobrir toda tela
+    background-repeat: no-repeat;*/
+}
+
+#caixa-mae {
+    width: 1000px; /*largura*/
+    height: 600px; /*altura*/
+    background-color: blue; /*cor de fundo*/
+    /* Esta linha torna o elemento um contêiner flexível, permitindo que seus filhos sejam organizados usando flexbox*/
+    display: flex;
+    /*Esta linha define a direção principal dos itens flexíveis dentro do contêiner como horizontal (da esquerda para a direita)*/
+    flex-direction: row;
+    /*Espaça igualmente os itens dentro do contêiner, colocando o primeiro no início, o último no final e distribuindo o espaço restante entre eles*/
+    justify-content: space-between;
+}
+
+#caixa-filho01 {
+    width: 200px; /*Se por 100%, o filho terá os 1000px 100% da largura da mãe*/
+    height: 100px;
+    background-color: red;
+}
+
+#caixa-filho02 {
+    width: 200px; 
+    height: 100px;
+    background-color: yellow;
+}
+
+#caixa-filho03 {
+    width: 200px; 
+    height: 100px;
+    background-color: green;
+}
